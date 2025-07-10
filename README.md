@@ -13,10 +13,10 @@ This responsive, modern portfolio highlights my background, work, and technical 
 
 Key Features:
 
-- ⚛️ Built with **React** for dynamic and reusable components
-- ⚡ Powered by **Vite** for lightning-fast development and builds
+- ⚛️ Built with **React** using JavaScript and JSX
+- ⚡ Powered by **Vite** for development and builds
 - 🎨 Styled using **Bootstrap** and custom **CSS**
-- 🌐 Hosted on **GitHub Pages** for free, fast, and reliable deployment
+- 🌐 Hosted on **GitHub Pages** for free, and reliable deployment
 - 📱 Fully responsive across devices
 
 ---
