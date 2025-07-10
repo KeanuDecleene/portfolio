@@ -7,7 +7,7 @@ Welcome to the source code for my personal **portfolio website**, built using **
 
 ---
 
-## 🚀 About the Project
+## 🚀 About the Website
 
 This responsive, modern portfolio highlights my background, work, and technical projects in a clean and accessible design. The goal of this site is to serve as a central hub for employers, collaborators, and anyone interested in my work.
 
