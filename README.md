@@ -1,12 +1,22 @@
-# React + Vite
+# 🌐 Keanu De Cleene — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the source code for my personal **portfolio website**, built using **React**, **Vite**, **HTML**, **CSS**, and **Bootstrap**. This website showcases my projects, skills, and passion for web development and technology.
 
-Currently, two official plugins are available:
+🔗 **Live Website:**  
+[https://keanudecleene.github.io/portfolio/](https://keanudecleene.github.io/portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 About the Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This responsive, modern portfolio highlights my background, work, and technical projects in a clean and accessible design. The goal of this site is to serve as a central hub for employers, collaborators, and anyone interested in my work.
+
+Key Features:
+
+- ⚛️ Built with **React** for dynamic and reusable components
+- ⚡ Powered by **Vite** for lightning-fast development and builds
+- 🎨 Styled using **Bootstrap** and custom **CSS**
+- 🌐 Hosted on **GitHub Pages** for free, fast, and reliable deployment
+- 📱 Fully responsive across devices
+
+---
