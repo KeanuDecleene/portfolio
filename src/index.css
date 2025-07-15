@@ -1,0 +1,26 @@
+body,
+html {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.main-wrapper {
+  background-color: #f8f9fa;
+  padding: 30px 24px;
+  min-height: 90vh;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .nav-link {
+  cursor: pointer;
+}
+
+.navbar-brand {
+  padding-left: 8px;
+}
