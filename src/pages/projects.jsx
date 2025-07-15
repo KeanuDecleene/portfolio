@@ -29,7 +29,7 @@ export default function Projects({
             <div className="card-body">
               <h5 className="card-title">Portfolio Website</h5>
               <p className="card-text text-muted">
-                This website you're viewing — built using React + Vite, styled
+                This website you're viewing. Built using React + Vite, styled
                 with Bootstrap and CSS, and deployed on GitHub Pages. Fully
                 responsive and animated with Framer Motion.
               </p>

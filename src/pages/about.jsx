@@ -1,7 +1,6 @@
-// src/pages/about.jsx
 import React from "react";
 import { motion } from "framer-motion";
-import keanuImage from "../assets/me.jpg"; // Adjust path if needed
+import keanuImage from "../assets/me.jpg";
 
 export default function AboutMe({
   variants,
@@ -19,8 +18,6 @@ export default function AboutMe({
       exit={exit}
       transition={transition}
     >
-      <h1 className="display-4 fw-bold mb-4 text-center">About Me</h1>
-
       <div className="row align-items-center g-4">
         {/* Left: Image */}
         <div className="col-md-4 text-center">
@@ -32,8 +29,9 @@ export default function AboutMe({
           />
         </div>
 
-        {/* Right: Text */}
+        {/* Right: Heading + Text Card */}
         <div className="col-md-8">
+          <h1 className="display-6 fw-bold mb-3 mr-2">Hey!</h1>
           <div className="card shadow rounded-4">
             <div className="card-body">
               <p className="lead text-muted mb-3">
@@ -44,9 +42,18 @@ export default function AboutMe({
                 and mobile applications.
               </p>
               <p className="text-muted mb-3">
+                My passion for technology started at a young age. I was always
+                fascinated by how computers worked. I couldn’t wrap my head
+                around how I could load up Minecraft and play online with
+                friends who were on entirely different computers. That curiosity
+                led me down a path of discovery, eventually sparking my interest
+                in programming and system architecture, and later solidifying my
+                decision to pursue a degree in Computer Science.
+              </p>
+              <p className="text-muted mb-3">
                 Over the course of my degree, I’ve gained hands-on experience
                 with React, Vite, JavaScript, CSS, Java, PHP, MySQL, REST APIs,
-                and Android development. I enjoy working on creative projects —
+                and Android development. I enjoy working on creative projects.
                 from personal websites to game logic and Roblox games using Lua.
               </p>
               <p className="text-muted mb-3">
@@ -55,6 +62,12 @@ export default function AboutMe({
                 improve youth engagement. I'm eager to contribute to real-world
                 solutions in the tech space and open to internship or junior
                 developer opportunities.
+              </p>
+              <p className="text-muted mb-3">
+                Outside of tech, I enjoy surfing, working out, and staying
+                active. I’ve been consistently training in the gym for several
+                years and love the discipline and structure it brings to my
+                life.
               </p>
               <p className="mb-2">
                 <a

@@ -63,7 +63,9 @@ export default function Portfolio() {
                   }`}
                   onClick={() => setActivePage(page)}
                 >
-                  {page.charAt(0).toUpperCase() + page.slice(1)}
+                  {page === "about"
+                    ? "About Me"
+                    : page.charAt(0).toUpperCase() + page.slice(1)}
                 </button>
               </li>
             ))}
