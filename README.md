@@ -1,4 +1,4 @@
-# 🌐 Keanu De Cleene — Portfolio Website
+# 🌐 Keanu De Cleene - Portfolio Website
 
 Welcome to the source code for my personal **portfolio website**, built using **React**, **Vite**, **HTML**, **CSS**, and **Bootstrap**. This website showcases my projects, skills, and passion for web development and technology.
 
