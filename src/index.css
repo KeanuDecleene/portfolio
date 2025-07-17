@@ -27,7 +27,7 @@ html {
   padding-left: 8px;
 }
 
-/*Dark Mode */
+/* Dark Mode */
 body.dark-mode,
 html.dark-mode {
   background-color: #121212;
@@ -66,6 +66,7 @@ body.dark-mode .btn-outline-light {
   background-color: #121212;
   color: #aaa;
 }
+
 footer {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -74,10 +75,57 @@ body.dark-mode .btn-outline-light:hover {
   background-color: #f5f5f5;
   color: #121212;
 }
+
 /* forces light text in dark mode */
 body.dark-mode,
 body.dark-mode .main-wrapper,
 body.dark-mode .card,
 body.dark-mode .card * {
   color: #f5f5f5 !important;
+}
+
+/* Button hover effect */
+.navbar .nav-link.btn.btn-link {
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+/* Glow on hover only */
+.navbar .nav-link.btn.btn-link:hover {
+  color: #0d6efd; /* Bootstrap primary blue */
+  background-color: rgba(13, 110, 253, 0.1);
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.6);
+}
+
+/* No glow on focus */
+.navbar .nav-link.btn.btn-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Dark mode hover glow */
+body.dark-mode .navbar .nav-link.btn.btn-link:hover {
+  color: #66aaff; /* lighter blue for dark bg */
+  background-color: rgba(102, 170, 255, 0.2);
+  box-shadow: 0 0 8px rgba(102, 170, 255, 0.8);
+}
+
+/* No glow on focus in dark mode */
+body.dark-mode .navbar .nav-link.btn.btn-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Icon slight scale on hover */
+.navbar .nav-link.btn.btn-link:hover svg {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Dark mode icon hover */
+body.dark-mode .navbar .nav-link.btn.btn-link:hover svg {
+  transform: scale(1.1);
 }

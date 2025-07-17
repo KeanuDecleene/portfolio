@@ -8,13 +8,23 @@ import Projects from "./pages/Projects.jsx";
 import Skills from "./pages/skills.jsx";
 import Contact from "./pages/contact.jsx";
 
+import { Typewriter } from "react-simple-typewriter";
+import {
+  FiSun,
+  FiMoon,
+  FiUser,
+  FiBriefcase,
+  FiCpu,
+  FiMail,
+} from "react-icons/fi";
+
 export default function Portfolio() {
   const [activePage, setActivePage] = useState("about");
-
-  //dark or light mode setup
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("theme") === "dark";
   });
+
+  const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
     document.body.className = darkMode ? "dark-mode" : "";
@@ -38,7 +48,6 @@ export default function Portfolio() {
   };
 
   const renderSection = () => {
-    //render the correct page based on user selection
     switch (activePage) {
       case "about":
         return <AboutMe {...animationProps} />;
@@ -53,58 +62,74 @@ export default function Portfolio() {
     }
   };
 
+  const iconMap = {
+    about: <FiUser className="me-1" />,
+    projects: <FiBriefcase className="me-1" />,
+    skills: <FiCpu className="me-1" />,
+    contact: <FiMail className="me-1" />,
+  };
+
   return (
     <>
-      {/* navbar */}
+      {/* Navbar */}
       <nav
         className={`navbar navbar-expand-lg px-4 ${
           darkMode ? "navbar-dark bg-dark" : "bg-black"
-        }`}
+        } shadow-sm`}
       >
-        <span
-          className="navbar-brand text-white fw-bold me-auto"
-          style={{ paddingLeft: "4px" }}
-        >
-          Keanu De Cleene
+        <span className="navbar-brand text-white fw-bold me-auto">
+          <Typewriter
+            words={["Keanu De Cleene"]}
+            loop={1}
+            cursor={showCursor}
+            cursorStyle=""
+            typeSpeed={80}
+            deleteSpeed={0}
+            delaySpeed={1000}
+            onType={() => setShowCursor(true)}
+            onLoopDone={() => setShowCursor(false)}
+          />
         </span>
-
         <div className="collapse navbar-collapse show">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto align-items-center">
             {["about", "projects", "skills", "contact"].map((page) => (
               <li className="nav-item" key={page}>
                 <button
                   className={`nav-link btn btn-link text-white ${
-                    activePage === page ? "text-decoration-underline" : ""
+                    activePage === page ? "active-link" : ""
                   }`}
                   onClick={() => setActivePage(page)}
                 >
+                  {iconMap[page]}
                   {page === "about"
                     ? "About Me"
                     : page.charAt(0).toUpperCase() + page.slice(1)}
                 </button>
               </li>
             ))}
-
-            {/* dark Mode Toggle */}
             <li className="nav-item">
               <button
                 onClick={toggleDarkMode}
-                className="nav-link btn btn-link text-white"
-                style={{ paddingLeft: "12px" }}
+                className="nav-link btn btn-link text-white ms-3"
               >
-                {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+                {darkMode ? (
+                  <FiSun className="me-1" />
+                ) : (
+                  <FiMoon className="me-1" />
+                )}
+                {darkMode ? "Light Mode" : "Dark Mode"}
               </button>
             </li>
           </ul>
         </div>
       </nav>
 
-      {/* main Section */}
+      {/* Main Section */}
       <main className="main-wrapper">
         <AnimatePresence mode="wait">{renderSection()}</AnimatePresence>
       </main>
 
-      {/* footer */}
+      {/* Footer */}
       <footer
         className={`text-center py-4 border-top ${
           darkMode ? "footer-dark" : "footer-light"
