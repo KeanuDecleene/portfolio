@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
@@ -10,6 +10,18 @@ import Contact from "./pages/contact.jsx";
 
 export default function Portfolio() {
   const [activePage, setActivePage] = useState("about");
+
+  //dark or light mode setup
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
+
+  useEffect(() => {
+    document.body.className = darkMode ? "dark-mode" : "";
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
+  }, [darkMode]);
+
+  const toggleDarkMode = () => setDarkMode(!darkMode);
 
   const transitionVariants = {
     initial: { opacity: 0, y: 10 },
@@ -26,6 +38,7 @@ export default function Portfolio() {
   };
 
   const renderSection = () => {
+    //render the correct page based on user selection
     switch (activePage) {
       case "about":
         return <AboutMe {...animationProps} />;
@@ -42,10 +55,11 @@ export default function Portfolio() {
 
   return (
     <>
-      {/* Navbar */}
+      {/* navbar */}
       <nav
-        className="navbar navbar-expand-lg px-4"
-        style={{ backgroundColor: "#121212" }}
+        className={`navbar navbar-expand-lg px-4 ${
+          darkMode ? "navbar-dark bg-dark" : "bg-black"
+        }`}
       >
         <span
           className="navbar-brand text-white fw-bold me-auto"
@@ -53,6 +67,7 @@ export default function Portfolio() {
         >
           Keanu De Cleene
         </span>
+
         <div className="collapse navbar-collapse show">
           <ul className="navbar-nav ms-auto">
             {["about", "projects", "skills", "contact"].map((page) => (
@@ -69,17 +84,32 @@ export default function Portfolio() {
                 </button>
               </li>
             ))}
+
+            {/* dark Mode Toggle */}
+            <li className="nav-item">
+              <button
+                onClick={toggleDarkMode}
+                className="nav-link btn btn-link text-white"
+                style={{ paddingLeft: "12px" }}
+              >
+                {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+              </button>
+            </li>
           </ul>
         </div>
       </nav>
 
-      {/* Main Section */}
+      {/* main Section */}
       <main className="main-wrapper">
         <AnimatePresence mode="wait">{renderSection()}</AnimatePresence>
       </main>
 
-      {/* Footer */}
-      <footer className="text-center text-muted py-4 border-top bg-light">
+      {/* footer */}
+      <footer
+        className={`text-center py-4 border-top ${
+          darkMode ? "footer-dark" : "footer-light"
+        }`}
+      >
         &copy; {new Date().getFullYear()} Keanu De Cleene. All rights reserved.
       </footer>
     </>

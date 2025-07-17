@@ -1,3 +1,4 @@
+/* Light Mode (Default) */
 body,
 html {
   background-color: #f8f9fa;
@@ -10,6 +11,7 @@ html {
   min-height: 90vh;
   max-width: 100%;
   margin: 0 auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .card {
@@ -23,4 +25,59 @@ html {
 
 .navbar-brand {
   padding-left: 8px;
+}
+
+/*Dark Mode */
+body.dark-mode,
+html.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode .main-wrapper {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  border-color: #333;
+}
+
+body.dark-mode .navbar {
+  background-color: #1a1a1a !important;
+}
+
+body.dark-mode .nav-link {
+  color: #f5f5f5 !important;
+}
+
+body.dark-mode .btn-outline-light {
+  border-color: #f5f5f5;
+}
+
+.footer-light {
+  background-color: #f8f9fa;
+  color: #6c757d; /* muted text */
+}
+
+.footer-dark {
+  background-color: #121212;
+  color: #aaa;
+}
+footer {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .btn-outline-light:hover {
+  background-color: #f5f5f5;
+  color: #121212;
+}
+/* forces light text in dark mode */
+body.dark-mode,
+body.dark-mode .main-wrapper,
+body.dark-mode .card,
+body.dark-mode .card * {
+  color: #f5f5f5 !important;
 }
