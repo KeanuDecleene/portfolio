@@ -1,4 +1,4 @@
-// src/pages/projects.jsx
+// src/pages/Projects.jsx
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -8,6 +8,7 @@ export default function Projects({
   animate,
   exit,
   transition,
+  onOpenCalorieApp,
 }) {
   return (
     <motion.section
@@ -93,6 +94,28 @@ export default function Projects({
                 *For educational and research purposes only. Not intended for
                 online use or competitive play.
               </p>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Calorie App */}
+        <div className="col-md-6">
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="card h-100 shadow rounded-4"
+          >
+            <div className="card-body">
+              <h5 className="card-title">Calorie Maintenance Web App</h5>
+              <p className="card-text text-muted">
+                A web app that calculates daily calorie maintenance using the
+                Mifflin-St Jeor equation and activity multipliers.
+              </p>
+              <button
+                className="btn btn-primary"
+                onClick={onOpenCalorieApp} // render via prop
+              >
+                Open Calorie Calculator
+              </button>
             </div>
           </motion.div>
         </div>

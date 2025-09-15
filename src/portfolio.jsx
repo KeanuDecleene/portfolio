@@ -1,12 +1,14 @@
+// src/Portfolio.jsx
 import React, { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
 import AboutMe from "./pages/about.jsx";
-import Projects from "./pages/Projects.jsx";
+import Projects from "./pages/projects.jsx";
 import Skills from "./pages/skills.jsx";
 import Contact from "./pages/contact.jsx";
+import CalorieApp from "./pages/calorie-app.jsx";
 
 import { Typewriter } from "react-simple-typewriter";
 import {
@@ -20,10 +22,9 @@ import {
 
 export default function Portfolio() {
   const [activePage, setActivePage] = useState("about");
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
-  });
-
+  const [darkMode, setDarkMode] = useState(
+    () => localStorage.getItem("theme") === "dark"
+  );
   const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
@@ -52,11 +53,18 @@ export default function Portfolio() {
       case "about":
         return <AboutMe {...animationProps} />;
       case "projects":
-        return <Projects {...animationProps} />;
+        return (
+          <Projects
+            {...animationProps}
+            onOpenCalorieApp={() => setActivePage("calorie-app")}
+          />
+        );
       case "skills":
         return <Skills {...animationProps} />;
       case "contact":
         return <Contact {...animationProps} />;
+      case "calorie-app":
+        return <CalorieApp {...animationProps} />;
       default:
         return null;
     }
@@ -70,7 +78,7 @@ export default function Portfolio() {
   };
 
   return (
-    <>
+    <div>
       {/* Navbar */}
       <nav
         className={`navbar navbar-expand-lg px-4 ${
@@ -101,9 +109,7 @@ export default function Portfolio() {
                   onClick={() => setActivePage(page)}
                 >
                   {iconMap[page]}
-                  {page === "about"
-                    ? "About Me"
-                    : page.charAt(0).toUpperCase() + page.slice(1)}
+                  {page.charAt(0).toUpperCase() + page.slice(1)}
                 </button>
               </li>
             ))}
@@ -137,6 +143,6 @@ export default function Portfolio() {
       >
         &copy; {new Date().getFullYear()} Keanu De Cleene. All rights reserved.
       </footer>
-    </>
+    </div>
   );
 }
