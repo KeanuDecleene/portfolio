@@ -14,6 +14,18 @@ html {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
 .card {
   background-color: #ffffff;
   transition: all 0.3s ease-in-out;
