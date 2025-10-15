@@ -42,13 +42,12 @@ export default function AboutMe({
                 and mobile applications.
               </p>
               <p className="text-muted mb-3">
-                My passion for technology started at a young age. I was always
-                fascinated by how computers worked. I couldn’t wrap my head
-                around how I could load up Minecraft and play online with
-                friends who were on entirely different computers. That curiosity
-                led me down a path of discovery, eventually sparking my interest
-                in programming and system architecture, and later solidifying my
-                decision to pursue a degree in Computer Science.
+                My interest for tech sparked young, I was always fascinated by
+                how computers worked. I couldn’t wrap my head around how I can
+                load up a game like Minecraft and play online with people who
+                were on entirely different computers. Curiosity led me down a
+                path of discovery, eventually solidifying my decision to pursue
+                a degree in Computer Science.
               </p>
               <p className="text-muted mb-3">
                 Over the course of my degree, I’ve gained hands-on experience
@@ -66,8 +65,7 @@ export default function AboutMe({
               <p className="text-muted mb-3">
                 Outside of tech, I enjoy surfing, working out, and staying
                 active. I’ve been consistently training in the gym for several
-                years and love the discipline and structure it brings to my
-                life.
+                years.
               </p>
               <p className="mb-2">
                 <a

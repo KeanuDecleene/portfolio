@@ -27,13 +27,11 @@ export default function Skills({
           <ul className="list-unstyled mb-0">
             <li>• React, Vite & JavaScript</li>
             <li>• HTML, CSS & Bootstrap</li>
-            <li>• Java, PHP, MySQL</li>
+            <li>• Java, PHP, SQL</li>
             <li>• Git / GitHub</li>
             <li>• REST APIs, Android Development</li>
             <li>• Roblox Studio & Lua</li>
             <li>• Game Memory/Script Editing (CS2, Lua)</li>
-            <li>• Cybersecurity & Computer Systems</li>
-            <li>• x86 Assembly, C Programming</li>
             <li>• C#, SQL, Object-Oriented Programming</li>
             <li>• Statistics & Computational Mathematics</li>
           </ul>

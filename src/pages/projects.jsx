@@ -32,9 +32,9 @@ export default function Projects({
             <div className="card-body">
               <h5 className="card-title">Roblox Games (Lua + Studio)</h5>
               <p className="card-text text-muted">
-                Designed and developed interactive games using Roblox Studio and
-                Lua scripting. These projects demonstrate game logic, UI design,
-                and player engagement mechanics.
+                Designed and developed games using Roblox Studio and Lua
+                scripting. These projects demonstrate game logic, UI design, and
+                player engagement mechanics.
               </p>
               <div className="d-flex gap-2 flex-wrap">
                 <a
@@ -93,7 +93,7 @@ export default function Projects({
                 Developed a Chrome extension to automatically convert kilojoules
                 to calories. I wanted to go through the process of building an
                 extension for chrome and was frustrated with constantly
-                searching "x kiloJoules to Calories" whenever I wanted to check.
+                searching "x kiloJoules to Calories" into google.
               </p>
               <p className="text-muted small fst-italic">
                 Built using JavaScript, HTML, and CSS.
