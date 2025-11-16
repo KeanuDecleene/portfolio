@@ -35,25 +35,25 @@ export default function AboutMe({
           <div className="card shadow rounded-4">
             <div className="card-body">
               <p className="lead text-muted mb-3">
-                I'm <strong>Keanu De Cleene</strong>, a third-year Computer
-                Science student at the University of Waikato, based in Tauranga,
-                New Zealand. I have a strong foundation in modern technologies
-                and a keen interest in software development, web engineering,
-                and mobile applications.
+                I'm <strong>Keanu De Cleene</strong>, A postgraduate student at
+                the University of Auckland, based in Auckland, New Zealand. I
+                have a strong foundation in modern technologies and a keen
+                interest in software development, AI, web engineering, and
+                mobile applications.
               </p>
               <p className="text-muted mb-3">
                 My interest for tech sparked young, I was always fascinated by
-                how computers worked. I couldn’t wrap my head around how I can
-                load up a game like Minecraft and play online with people who
-                were on entirely different computers. Curiosity led me down a
-                path of discovery, eventually solidifying my decision to pursue
-                a degree in Computer Science.
+                how computers worked. I couldn’t wrap my head around how I could
+                simultaneously play games with people on the other side of the
+                world. Curiosity led me down a path of discovery, eventually
+                solidifying my decision to pursue a degree in Computer Science
+                and further education in AI.
               </p>
               <p className="text-muted mb-3">
                 Over the course of my degree, I’ve gained hands-on experience
-                with React, Vite, JavaScript, CSS, Java, PHP, MySQL, REST APIs,
-                and Android development. I enjoy working on creative projects.
-                from personal websites to game logic and Roblox games using Lua.
+                with React,JavaScript, CSS, Java, PHP, MySQL, REST APIs, and
+                Android development. I enjoy working on creative projects. from
+                personal websites to game logic and Roblox games using Lua.
               </p>
               <p className="text-muted mb-3">
                 I've contributed to meaningful projects like{" "}
