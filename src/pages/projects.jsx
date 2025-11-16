@@ -23,7 +23,7 @@ export default function Projects({
     >
       <h2 className="h3 mb-4">Projects</h2>
       <div className="row g-4">
-        {/* Roblox Games */}
+        {/* roblox games */}
         <div className="col-md-6">
           <motion.div
             whileHover={{ scale: 1.02 }}

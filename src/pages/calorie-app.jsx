@@ -35,7 +35,7 @@ export default function CalorieApp() {
       return;
     }
 
-    // Calculate BMR
+    //calculate BMR
     let bmr;
     if (gender === "male") {
       bmr = 10 * weight + 6.25 * height - 5 * age + 5;
@@ -43,7 +43,7 @@ export default function CalorieApp() {
       bmr = 10 * weight + 6.25 * height - 5 * age - 161;
     }
 
-    // Apply activity multiplier
+    //apply activity multiplier
     const multiplier = activityLevels[activity] || 1.2;
     const maintenanceCalories = Math.round(bmr * multiplier);
 

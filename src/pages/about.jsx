@@ -19,7 +19,7 @@ export default function AboutMe({
       transition={transition}
     >
       <div className="row align-items-center g-4">
-        {/* Left: Image */}
+        {/* image */}
         <div className="col-md-4 text-center">
           <img
             src={keanuImage}
@@ -29,7 +29,7 @@ export default function AboutMe({
           />
         </div>
 
-        {/* Right: Heading + Text Card */}
+        {/* heading + text*/}
         <div className="col-md-8">
           <h1 className="display-6 fw-bold mb-3 mr-2">Hey!</h1>
           <div className="card shadow rounded-4">
