@@ -42,25 +42,20 @@ export default function AboutMe({
                 mobile applications.
               </p>
               <p className="text-muted mb-3">
-                My interest for tech sparked young, I was always fascinated by
-                how computers worked. I couldn’t wrap my head around how I could
-                simultaneously play games with people on the other side of the
-                world. Curiosity led me down a path of discovery, eventually
-                solidifying my decision to pursue a degree in Computer Science
-                and further education in AI.
+                My interest for tech sparked young. I couldn’t wrap my head
+                around how I could simultaneously play games with people on the
+                other side of the world. Curiosity led me down a path of
+                discovery, eventually solidifying my decision to pursue a degree
+                in Computer Science and further education in AI.
               </p>
               <p className="text-muted mb-3">
-                Over the course of my degree, I’ve gained hands-on experience
-                with React,JavaScript, CSS, Java, PHP, MySQL, REST APIs, and
-                Android development. I enjoy working on creative projects. from
-                personal websites to game logic and Roblox games using Lua.
-              </p>
-              <p className="text-muted mb-3">
-                I've contributed to meaningful projects like{" "}
-                <em>The Impact Lab</em>, collaborating with local councils to
-                improve youth engagement. I'm eager to contribute to real-world
-                solutions in the tech space and open to internship or junior
-                developer opportunities.
+                Over the course of my degree, and personal projects I’ve gained
+                hands-on experience with React, JavaScript, CSS, Java, PHP,
+                MySQL, REST APIs, and Android development. I've contributed to
+                meaningful projects like <em>The Impact Lab</em>, collaborating
+                with local councils to improve youth engagement. I'm eager to
+                contribute to real-world solutions in the tech space and open to
+                internship or graduate opportunities.
               </p>
               <p className="text-muted mb-3">
                 Outside of tech, I enjoy surfing, working out, and staying

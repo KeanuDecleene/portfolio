@@ -1,8 +1,8 @@
-#  Keanu De Cleene - Portfolio Website
+# Keanu De Cleene - Portfolio Website
 
 Welcome to the source code for my personal **portfolio website**, built using **React**, **Vite**, **HTML**, **CSS**, and **Bootstrap**. This website showcases my projects, skills, and passion for web development and technology.
 
- **Live Website:**  
+**Live Website:**  
 [https://keanudecleene.github.io/portfolio/](https://keanudecleene.github.io/portfolio/)
 
 ---
@@ -13,10 +13,10 @@ This responsive, modern portfolio highlights my background, work, and technical 
 
 Key Features:
 
--  Built with **React** using JavaScript and JSX
--  Powered by **Vite** for development and builds
--  Styled using **Bootstrap** and custom **CSS**
--  Hosted on **GitHub Pages** for free, and reliable deployment
--  Fully responsive across devices
+- Built with **React** using JavaScript and JSX
+- Powered by **Vite** for development and builds
+- Styled using **Bootstrap** and custom **CSS**
+- Hosted on **GitHub Pages** for free, and reliable deployment
+- Fully responsive across devices
 
 ---
