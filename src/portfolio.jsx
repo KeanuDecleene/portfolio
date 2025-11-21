@@ -79,63 +79,65 @@ export default function Portfolio() {
 
   return (
     <div>
-      {/* Navbar */}
+      {/* navbar */}
       <nav
         className={`navbar navbar-expand-lg px-4 ${
           darkMode ? "navbar-dark bg-dark" : "bg-black"
         } shadow-sm`}
       >
-        <span className="navbar-brand text-white fw-bold me-auto">
-          <Typewriter
-            words={["Keanu De Cleene"]}
-            loop={1}
-            cursor={showCursor}
-            cursorStyle=""
-            typeSpeed={80}
-            deleteSpeed={0}
-            delaySpeed={1000}
-            onType={() => setShowCursor(true)}
-            onLoopDone={() => setShowCursor(false)}
-          />
-        </span>
-        <div className="collapse navbar-collapse show">
-          <ul className="navbar-nav ms-auto align-items-center">
-            {["about", "projects", "skills", "contact"].map((page) => (
-              <li className="nav-item" key={page}>
+        <div className="container-fluid d-flex flex-column flex-lg-row align-items-center">
+          <span className="navbar-brand text-white fw-bold mb-2 mb-lg-0">
+            <Typewriter
+              words={["Keanu De Cleene"]}
+              loop={1}
+              cursor={showCursor}
+              cursorStyle=""
+              typeSpeed={80}
+              deleteSpeed={0}
+              delaySpeed={1000}
+              onType={() => setShowCursor(true)}
+              onLoopDone={() => setShowCursor(false)}
+            />
+          </span>
+          <div className="collapse navbar-collapse show">
+            <ul className="navbar-nav ms-auto align-items-center">
+              {["about", "projects", "skills", "contact"].map((page) => (
+                <li className="nav-item" key={page}>
+                  <button
+                    className={`nav-link btn btn-link text-white ${
+                      activePage === page ? "active-link" : ""
+                    }`}
+                    onClick={() => setActivePage(page)}
+                  >
+                    {iconMap[page]}
+                    {page.charAt(0).toUpperCase() + page.slice(1)}
+                  </button>
+                </li>
+              ))}
+              <li className="nav-item">
                 <button
-                  className={`nav-link btn btn-link text-white ${
-                    activePage === page ? "active-link" : ""
-                  }`}
-                  onClick={() => setActivePage(page)}
+                  onClick={toggleDarkMode}
+                  className="nav-link btn btn-link text-white ms-3"
                 >
-                  {iconMap[page]}
-                  {page.charAt(0).toUpperCase() + page.slice(1)}
+                  {darkMode ? (
+                    <FiSun className="me-1" />
+                  ) : (
+                    <FiMoon className="me-1" />
+                  )}
+                  {darkMode ? "Light Mode" : "Dark Mode"}
                 </button>
               </li>
-            ))}
-            <li className="nav-item">
-              <button
-                onClick={toggleDarkMode}
-                className="nav-link btn btn-link text-white ms-3"
-              >
-                {darkMode ? (
-                  <FiSun className="me-1" />
-                ) : (
-                  <FiMoon className="me-1" />
-                )}
-                {darkMode ? "Light Mode" : "Dark Mode"}
-              </button>
-            </li>
-          </ul>
+            </ul>
+          </div>
         </div>
       </nav>
 
-      {/* Main Section */}
+      {/* main section */}
       <main className="main-wrapper">
         <AnimatePresence mode="wait">{renderSection()}</AnimatePresence>
       </main>
 
-      {/* Footer */}
+      {/* footer */}
       <footer
         className={`text-center py-4 border-top ${
           darkMode ? "footer-dark" : "footer-light"
