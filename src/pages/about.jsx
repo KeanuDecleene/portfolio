@@ -18,14 +18,20 @@ export default function AboutMe({
       exit={exit}
       transition={transition}
     >
-      <div className="row align-items-center g-4">
+      <div className="container-fluid d-flex flex-column flex-lg-row row align-items-center g-4">
         {/* image */}
-        <div className="col-md-4 text-center">
+        <div className="col-12 col-md-4 text-center mb-3 mb-md-0 d-flex justify-content-center">
           <img
             src={keanuImage}
             alt="Keanu De Cleene"
-            className="img-fluid rounded-4 shadow"
-            style={{ maxHeight: "350px", objectFit: "cover" }}
+            className="rounded-4 shadow"
+            style={{
+              width: "100%", // fills container width
+              maxWidth: "350px", // won’t get bigger than this
+              height: "auto", // preserves aspect ratio
+              minHeight: "220px", // prevents collapsing
+              objectFit: "cover",
+            }}
           />
         </div>
 
