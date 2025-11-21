@@ -18,9 +18,9 @@ export default function AboutMe({
       exit={exit}
       transition={transition}
     >
-      <div className="container-fluid d-flex flex-column flex-lg-row row align-items-center g-4">
+      <div className="container-fluid d-flex flex-column flex-lg-row align-items-center g-4">
         {/* image */}
-        <div className="col-15 col-md-4 text-center">
+        <div className="col-12 col-md-4 text-center mb-3 mb-md-0 pe-md-4">
           <img
             src={keanuImage}
             alt="Keanu De Cleene"
@@ -29,9 +29,11 @@ export default function AboutMe({
           />
         </div>
 
-        {/* heading + text*/}
-        <div className="col-md-8">
-          <h1 className="display-6 fw-bold mb-3 mr-2">Hey!</h1>
+        {/* Text column */}
+        <div className="col-12 col-md-8 d-flex flex-column justify-content-center ps-md-4">
+          <h1 className="display-6 fw-bold mb-3 text-center text-lg-start">
+            Hey!
+          </h1>
           <div className="card shadow rounded-4">
             <div className="card-body">
               <p className="lead text-muted mb-3">
