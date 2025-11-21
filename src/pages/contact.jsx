@@ -33,7 +33,7 @@ export default function Contact({
       exit={exit}
       transition={transition}
     >
-      <h2 className="h3 mb-4">Contact</h2>
+      <h2 className="h3 mb-4">Contact Me</h2>
       <motion.div
         whileHover={{ scale: 1.01 }}
         className="card shadow rounded-4"
