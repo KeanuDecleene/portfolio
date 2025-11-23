@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./index.css";
+import "./style.css";
 
 import AboutMe from "./pages/about.jsx";
 import Projects from "./pages/projects.jsx";
