@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import keanuImage from "../assets/me.jpg";
+import { Github, Linkedin } from "lucide-react";
 
 export default function AboutMe({
   variants,
@@ -29,7 +30,7 @@ export default function AboutMe({
           />
         </div>
 
-        {/* Text column */}
+        {/* text column */}
         <div className="col-12 col-md-8 d-flex flex-column justify-content-center ps-md-4">
           <h1 className="display-6 fw-bold mb-3 text-center text-lg-start">
             Hey!
@@ -64,7 +65,8 @@ export default function AboutMe({
                 active. I’ve been consistently training in the gym for several
                 years.
               </p>
-              <p className="mb-2">
+              <p className="mb-2 d-flex align-items-center gap-2">
+                <Github className="w-5 h-5" />
                 <a
                   href="https://github.com/KeanuDecleene"
                   target="_blank"
@@ -73,7 +75,9 @@ export default function AboutMe({
                   GitHub Profile
                 </a>
               </p>
-              <p className="mb-0">
+
+              <p className="mb-0 d-flex align-items-center gap-2">
+                <Linkedin className="w-5 h-5" />
                 <a
                   href="https://www.linkedin.com/in/keanu-de-cleene-4a93a2353/"
                   target="_blank"
