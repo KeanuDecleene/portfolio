@@ -5,8 +5,6 @@ Welcome to the source code for my personal **portfolio website**, built using **
 **Live Website:**  
 [https://keanudecleene.github.io/portfolio/](https://keanudecleene.github.io/portfolio/)
 
----
-
 ## About the Website
 
 The goal of this site is to serve as a central hub for employers, collaborators, and anyone interested in my work.
