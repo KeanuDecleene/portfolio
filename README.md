@@ -9,10 +9,3 @@ Welcome to the source code for my personal portfolio website, built using React,
 
 The goal of this site is to serve as a central hub for employers, collaborators, and anyone interested in my portfolio
 
-Key Features:
-
-- Built with React using JavaScript 
-- Powered by Vite for development and builds
-- Styled using Bootstrap and CSS
-- Hosted on GitHub Pages for free, and reliable deployment
-- Fully responsive across devices
