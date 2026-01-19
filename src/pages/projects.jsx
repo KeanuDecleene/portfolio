@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Screenshot from "../assets/Screenshot.png";
 import Maintenance from "../assets/Screenshot1.png";
+import GymCompare from "../assets/Screenshot4.png";
 
 export default function Projects({
   variants,
@@ -65,16 +66,15 @@ export default function Projects({
             className="card h-100 shadow rounded-4"
           >
             <div className="card-body">
-              <h5 className="card-title">CS2 Cheats – Wallhack Project</h5>
+              <h5 className="card-title">
+                CS2 Cheats – Wallhack Project (in progress)
+              </h5>
               <p className="card-text text-muted">
                 A personal project experimenting with Counter-Strike 2 memory
                 editing and overlays to reveal player positions through walls.
                 This involved analyzing game memory, hooking into rendering
                 pipelines, and overlaying ESP visuals using Lua and external
                 tools.
-              </p>
-              <p className="text-muted small fst-italic">
-                For educational and research purposes
               </p>
             </div>
           </motion.div>
@@ -146,6 +146,42 @@ export default function Projects({
                 <button className="btn btn-primary" onClick={onOpenCalorieApp}>
                   Open Calorie Calculator
                 </button>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
+        {/*gym compare*/}
+        <div className="col-md-6">
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="card h-100 shadow rounded-4"
+          >
+            <div className="card-body">
+              <h5 className="card-title">Gym Compare App</h5>
+              <p className="card-text text-muted">
+                A PyQt6 built app that helps with comparing gyms close to a user
+                inputted location. The app pulls data from Overpass API to get
+                gym distances and details, then displays them in an easy to read
+                sorted format. I built this app to help myself become familiar
+                with scraping websites, APIs, and building desktop applications
+                using Python and its libraries, as well as packaging apps into
+                an executable.
+              </p>
+              <img
+                src={GymCompare}
+                alt="Gym Compare Screenshot"
+                className="img-fluid rounded "
+              />
+              <div className="d-flex gap-2 mt-2 mb-3">
+                <a
+                  href="https://github.com/KeanuDecleene/gym_compare"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline-primary"
+                >
+                  View on GitHub
+                </a>
               </div>
             </div>
           </motion.div>
