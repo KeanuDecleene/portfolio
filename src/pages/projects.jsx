@@ -95,9 +95,6 @@ export default function Projects({
                 extension for chrome and was frustrated with constantly
                 searching "x kiloJoules to Calories" into google.
               </p>
-              <p className="text-muted small fst-italic">
-                Built using JavaScript, HTML, and CSS.
-              </p>
               <img
                 src={Screenshot}
                 alt="NormalUnits Extension Screenshot"
@@ -162,11 +159,11 @@ export default function Projects({
               <p className="card-text text-muted">
                 A PyQt6 built app that helps with comparing gyms close to a user
                 inputted location. The app pulls data from Overpass API to get
-                gym distances and details, then displays them in an easy to read
-                sorted format. I built this app to help myself become familiar
-                with scraping websites, APIs, and building desktop applications
-                using Python and its libraries, as well as packaging apps into
-                an executable.
+                gym distances and details, then displays them in a sorted
+                format. I built this app to help myself become familiar with
+                scraping websites, APIs, and building desktop applications using
+                Python and its libraries, as well as packaging apps into an
+                executable.
               </p>
               <img
                 src={GymCompare}

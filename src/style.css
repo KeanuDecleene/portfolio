@@ -11,7 +11,9 @@ html {
   min-height: 90vh;
   max-width: 100%;
   margin: 0 auto;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 ::-webkit-scrollbar {
@@ -80,7 +82,9 @@ body.dark-mode .btn-outline-light {
 }
 
 footer {
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 body.dark-mode .btn-outline-light:hover {
@@ -98,7 +102,9 @@ body.dark-mode .card * {
 
 /* button hover effect */
 .navbar .nav-link.btn.btn-link {
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
   border-radius: 4px;
   padding: 6px 12px;
 }
@@ -116,6 +122,12 @@ body.dark-mode .card * {
 .navbar .nav-link.btn.btn-link:focus {
   outline: none;
   box-shadow: none;
+}
+
+.project-image {
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
 }
 
 /* dark mode hover glow */
