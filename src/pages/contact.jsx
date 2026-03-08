@@ -18,8 +18,8 @@ export default function Contact({
     }
 
     const mailto = `mailto:keanudecleene124@gmail.com?subject=Message from ${encodeURIComponent(
-      name
-    )}&body=${encodeURIComponent(`Hi, my name is ${name}.\n\n${message}`)}`;
+      name,
+    )}&body=${encodeURIComponent(`${message}`)}`;
 
     window.location.href = mailto;
   };

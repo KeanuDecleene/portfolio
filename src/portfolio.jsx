@@ -23,7 +23,7 @@ import {
 export default function Portfolio() {
   const [activePage, setActivePage] = useState("about");
   const [darkMode, setDarkMode] = useState(
-    () => localStorage.getItem("theme") === "dark"
+    () => localStorage.getItem("theme") === "dark",
   );
   const [showCursor, setShowCursor] = useState(true);
 
@@ -143,7 +143,7 @@ export default function Portfolio() {
           darkMode ? "footer-dark" : "footer-light"
         }`}
       >
-        &copy; {new Date().getFullYear()} Keanu De Cleene. All rights reserved.
+        Hello.
       </footer>
     </div>
   );

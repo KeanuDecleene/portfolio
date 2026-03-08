@@ -122,7 +122,7 @@ export default function Projects({
           </motion.div>
         </div>
 
-        {/* Calorie App */}
+        {/*calorie app */}
         <div className="col-md-6">
           <motion.div
             whileHover={{ scale: 1.02 }}
