@@ -7,9 +7,14 @@ export default function Contact({
   animate,
   exit,
   transition,
+  darkMode,
 }) {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+
+  const primaryBtn = darkMode
+    ? "btn btn-light text-dark border-light"
+    : "btn btn-dark";
 
   const handleSend = () => {
     if (!name || !message) {
@@ -36,9 +41,9 @@ export default function Contact({
       <h2 className="h3 mb-4">Contact Me</h2>
       <motion.div
         whileHover={{ scale: 1.01 }}
-        className="card shadow rounded-4"
+        className="card shadow rounded-4 border-0"
       >
-        <div className="card-body">
+        <div className="card-body p-4">
           <div className="mb-3">
             <label htmlFor="nameInput" className="form-label">
               Your Name
@@ -65,7 +70,7 @@ export default function Contact({
               placeholder="Write your message here"
             ></textarea>
           </div>
-          <button className="btn btn-primary" onClick={handleSend}>
+          <button className={primaryBtn} onClick={handleSend}>
             Send Message
           </button>
         </div>

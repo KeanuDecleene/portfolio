@@ -6,7 +6,6 @@ import "./style.css";
 
 import AboutMe from "./pages/about.jsx";
 import Projects from "./pages/projects.jsx";
-import Skills from "./pages/skills.jsx";
 import Contact from "./pages/contact.jsx";
 import CalorieApp from "./pages/calorie-app.jsx";
 
@@ -51,29 +50,32 @@ export default function Portfolio() {
   const renderSection = () => {
     switch (activePage) {
       case "about":
-        return <AboutMe {...animationProps} />;
+        return <AboutMe {...animationProps} darkMode={darkMode} />;
       case "projects":
         return (
           <Projects
             {...animationProps}
+            darkMode={darkMode}
             onOpenCalorieApp={() => setActivePage("calorie-app")}
           />
         );
-      case "skills":
-        return <Skills {...animationProps} />;
       case "contact":
-        return <Contact {...animationProps} />;
+        return <Contact {...animationProps} darkMode={darkMode} />;
       case "calorie-app":
-        return <CalorieApp {...animationProps} />;
+        return (
+          <CalorieApp
+            {...animationProps}
+            darkMode={darkMode}
+            onBack={() => setActivePage("projects")}
+          />
+        );
       default:
         return null;
     }
   };
-
   const iconMap = {
     about: <FiUser className="me-1" />,
     projects: <FiBriefcase className="me-1" />,
-    skills: <FiCpu className="me-1" />,
     contact: <FiMail className="me-1" />,
   };
 
@@ -101,7 +103,7 @@ export default function Portfolio() {
           </span>
           <div className="collapse navbar-collapse show">
             <ul className="navbar-nav ms-auto align-items-center">
-              {["about", "projects", "skills", "contact"].map((page) => (
+              {["about", "projects", "contact"].map((page) => (
                 <li className="nav-item" key={page}>
                   <button
                     className={`nav-link btn btn-link text-white ${

@@ -9,7 +9,15 @@ export default function AboutMe({
   animate,
   exit,
   transition,
+  darkMode,
 }) {
+  const primaryBtn = darkMode
+    ? "btn btn-light text-dark border-light"
+    : "btn btn-dark";
+  const secondaryBtn = darkMode
+    ? "btn btn-outline-light"
+    : "btn btn-outline-dark";
+
   return (
     <motion.section
       key="about"
@@ -35,24 +43,24 @@ export default function AboutMe({
           <h1 className="display-6 fw-bold mb-3 text-center text-lg-start">
             Hey!
           </h1>
-          <div className="card shadow rounded-4">
+          <div className="card shadow rounded-4 border-0">
             <div className="card-body">
               <p className="lead text-muted mb-3">
-                I'm <strong>Keanu De Cleene</strong>, A postgraduate student at
+                I'm <strong>Keanu De Cleene</strong>, a postgraduate student at
                 the University of Auckland, based in Auckland, New Zealand. I
                 have a strong foundation in modern technologies and a keen
                 interest in software development, AI, web engineering, and
                 mobile applications.
               </p>
               <p className="text-muted mb-3">
-                My interest for tech sparked young. I couldn’t wrap my head
+                My interest in tech sparked young. I couldn’t wrap my head
                 around how I could simultaneously play games with people on the
                 other side of the world. Curiosity led me down a path of
                 discovery, eventually solidifying my decision to pursue a degree
                 in Computer Science and further education in AI.
               </p>
               <p className="text-muted mb-3">
-                Over the course of my degree, and personal projects I’ve gained
+                Over the course of my degree and personal projects, I’ve gained
                 hands-on experience with React, JavaScript, CSS, Java, PHP,
                 MySQL, REST APIs, and Android development. I've contributed to
                 meaningful projects like <em>The Impact Lab</em>, collaborating
@@ -60,32 +68,38 @@ export default function AboutMe({
                 contribute to real-world solutions in the tech space and open to
                 internship or graduate opportunities.
               </p>
-              <p className="text-muted mb-3">
+              <p className="text-muted mb-4">
                 Outside of tech, I enjoy surfing, working out, and staying
                 active. I’ve been consistently training in the gym for several
                 years.
               </p>
-              <p className="mb-2 d-flex align-items-center gap-2">
-                <Github className="w-5 h-5" />
+
+              <div className="d-flex flex-column flex-sm-row gap-3">
                 <a
                   href="https://github.com/KeanuDecleene"
                   target="_blank"
                   rel="noreferrer"
+                  className={`${primaryBtn} d-inline-flex align-items-center gap-2`}
                 >
-                  GitHub Profile
+                  <Github
+                    size={18}
+                    className={darkMode ? "text-dark" : "text-white"}
+                  />
+                  <span className={darkMode ? "text-dark" : "text-white"}>
+                    GitHub
+                  </span>
                 </a>
-              </p>
 
-              <p className="mb-0 d-flex align-items-center gap-2">
-                <Linkedin className="w-5 h-5" />
                 <a
                   href="https://www.linkedin.com/in/keanu-de-cleene-4a93a2353/"
                   target="_blank"
                   rel="noreferrer"
+                  className={`${secondaryBtn} d-inline-flex align-items-center gap-2`}
                 >
-                  LinkedIn Profile
+                  <Linkedin size={18} />
+                  LinkedIn
                 </a>
-              </p>
+              </div>
             </div>
           </div>
         </div>
