@@ -9,7 +9,6 @@ import Projects from "./pages/projects.jsx";
 import Contact from "./pages/contact.jsx";
 import CalorieApp from "./pages/calorie-app.jsx";
 
-import { Typewriter } from "react-simple-typewriter";
 import {
   FiSun,
   FiMoon,
@@ -89,17 +88,7 @@ export default function Portfolio() {
       >
         <div className="container-fluid d-flex flex-column flex-lg-row align-items-center">
           <span className="navbar-brand text-white fw-bold mb-2 mb-lg-0">
-            <Typewriter
-              words={["Keanu De Cleene"]}
-              loop={1}
-              cursor={showCursor}
-              cursorStyle=""
-              typeSpeed={80}
-              deleteSpeed={0}
-              delaySpeed={1000}
-              onType={() => setShowCursor(true)}
-              onLoopDone={() => setShowCursor(false)}
-            />
+            Keanu De Cleene
           </span>
           <div className="collapse navbar-collapse show">
             <ul className="navbar-nav ms-auto align-items-center">
