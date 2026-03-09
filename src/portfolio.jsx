@@ -114,17 +114,13 @@ export default function Portfolio() {
                   </button>
                 </li>
               ))}
-              <li className="nav-item">
+              <li className="nav-item d-flex align-items-center">
                 <button
                   onClick={toggleDarkMode}
-                  className="nav-link btn btn-link text-white ms-3"
+                  className="nav-link btn btn-link text-white d-flex align-items-center justify-content-center p-0"
+                  style={{ width: "40px", height: "40px" }}
                 >
-                  {darkMode ? (
-                    <FiSun className="me-1" />
-                  ) : (
-                    <FiMoon className="me-1" />
-                  )}
-                  {darkMode ? "Light Mode" : "Dark Mode"}
+                  {darkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
                 </button>
               </li>
             </ul>
