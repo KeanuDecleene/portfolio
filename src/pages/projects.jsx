@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Screenshot from "../assets/Screenshot.png";
 import Maintenance from "../assets/Screenshot1.png";
 import GymCompare from "../assets/Screenshot4.png";
+import CitationRemover from "../assets/citationRemover.jpg";
 
 export default function Projects({
   variants,
@@ -61,6 +62,50 @@ export default function Projects({
                   className={secondaryBtn}
                 >
                   View on GitHub
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+        {/* roblox games */}
+        <div className="project-item">
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="card shadow rounded-4 border-0"
+          >
+            <div className="card-body">
+              <h5 className="card-title">In Text Citation Remover</h5>
+              <p className="card-text text-muted">
+                In-Text Citation Remover / Citation Cleaner PDF is a FastAPI web
+                app built to clean academic PDFs by removing common in-text
+                citation patterns such as (Smith, 2020), Johnson (2021). The app
+                lets users upload a PDF, and returns a cleaned PDF. It preserves
+                the original page count, page dimensions, layout, and embedded
+                images as closely as possible.The project is built with Python,
+                FastAPI, HTML/CSS, and PDF-processing logic.
+              </p>
+              <img
+                src={CitationRemover}
+                alt="In Text Citation Remover Screenshot"
+                className="img-fluid rounded mb-3"
+              />
+
+              <div className="d-flex gap-2 mb-3 flex-wrap">
+                <a
+                  href="https://github.com/KeanuDecleene/in_text_citation_be_gone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={secondaryBtn}
+                >
+                  View on GitHub
+                </a>
+                <a
+                  href="https://in-text-citation-be-gone.onrender.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={primaryBtn}
+                >
+                  Live Website
                 </a>
               </div>
             </div>
